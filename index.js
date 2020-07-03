@@ -1,6 +1,7 @@
 function updateObjectWithKeyAndValue(object, key, value){
   var objInternal;
   objInternal = Object.assign({}, object);
+    // apparently "objInternal.assign" is not valid.
   objInternal[key] = value;
   return objInternal;
 }
