@@ -3,7 +3,7 @@ function updateObjectWithKeyAndValue(object, key, value){
   objInternal = Object.assign({}, object);
     // apparently "objInternal.assign" is not valid.
   objInternal[key] = value;
-  return objInternal;
+  return objInternal; // some of these tests require "return", others don't.
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
