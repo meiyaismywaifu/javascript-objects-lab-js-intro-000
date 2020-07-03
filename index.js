@@ -1,4 +1,8 @@
 function updateObjectWithKeyAndValue(object, key, value){
+  var objInternal
+  objInternal.assign({}, object);
+  objInternal[key] = value;
+  return objInternal;
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
